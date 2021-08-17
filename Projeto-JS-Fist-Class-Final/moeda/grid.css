@@ -1,0 +1,281 @@
+/* Fromatação padrão */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #c2bebe;
+}
+
+section{
+    height: 10vh;
+    height: auto;
+}
+
+/* Caixas de grid */
+#caixa1, #caixa2, #caixa3, #caixa4{
+    padding-top: 20px;
+}
+
+#caixa1{
+    margin-top: 200px;
+    height: 30vh;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #FFFFFF;
+    background-image: url("./imagens/mundi.jpg");
+    padding-top: 70px;
+}
+
+#caixa2{
+    grid-row-start: 2;
+    grid-row-end: 6;
+    height: 60vh;
+}
+
+#caixa3{
+    height: 60vh;
+}
+
+#caixa4{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 13vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(68, 68, 68);
+}
+
+/* Texto Inicial */
+#texto{
+    margin: 0 auto;
+    background-color: #72707D;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    width: 40vw;
+    text-align: justify;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+#texto h2{
+    color: #FFFFFF;
+}
+
+/* Elementos conversor */
+#principal{
+    width: 25vw;
+    background-color: #FFFFFF;
+    float: right;
+}
+
+#titulo{
+    background-color: rgb(68, 68, 68);
+    text-align: justify;
+    line-height: 6vh;
+    height: 6vh;
+    color: #FFFFFF;
+    font-size: 1.4vw;
+}
+
+#imagem{
+    width: 2vw;
+    height: 4vh;
+    margin-top: 6px;
+    margin-left: 10px;
+    margin-right: 15px;
+    float: left;
+    background-color: rgb(68, 68, 68);
+    background-image: url("./imagens/conversor.png");
+    background-size: 1.9vw;
+    background-repeat: no-repeat;
+}
+
+#conversor{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+input, select{
+    border: 1px solid rgb(92, 90, 90);
+    width: 23vw;
+    height: 4vh;
+    margin-bottom: 15px;
+    background-color: #F5F5F5;
+}
+
+#botao1{
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    height: 6vh;
+    font-weight: bold;
+    font-size: 1vw;
+    color: #FFFFFF;
+    background-color: rgb(68, 68, 68);
+}
+
+#botao1:hover, #botao2:hover{
+    background-color: #AEBBB6;
+}
+
+#botao2{
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: 8px;
+    width: 8vw;
+    float: right;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: rgb(68, 68, 68);
+    text-transform: uppercase;
+    font-size: 1vw;
+}
+
+/* Elementos da tabela */
+#tabela{
+    margin-left: 30px;
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#taxa{
+    width: 30vw;
+    text-align: center;
+    line-height: 6vh;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: large;
+    background-color: rgb(68, 68, 68);
+    height: 6vh;
+}
+
+.th, .th1{
+    border: 1px solid;
+    text-align: center;
+    width: 7vw;
+    height: 5vh;
+    line-height: 5vh;
+    flex-grow: 1;
+    background-color: #EDEDED;
+    color: #7F7F7F;
+    background-size: 1.9vw;
+    background-repeat: no-repeat;
+    background-position: left center;
+    font-size: 1vw;
+}
+
+.th1{
+    background-color: #E8E8E8;
+    background-image: url("./imagens/brasil.png");
+}
+
+.branco{
+    background-color: #FFFFFF;
+}
+
+.none{
+    background-image: none;
+}
+
+#eua{
+    background-image: url("./imagens/eua.png");
+}
+
+#canada{
+    background-image: url("./imagens/canada.png");
+}
+
+#euro{
+    background-image: url("./imagens/euro.png");
+}
+
+#libra{
+    background-image: url("./imagens/libra.png");
+}
+
+#argentina{
+    background-image: url("./imagens/argentina.png");
+}
+
+/* Link para página calculadora */
+#calculadora{
+    margin-top: 100px;
+    margin-right: 20px;
+    width: 5.3vw;
+    height: 15vh;
+    background-image: url("./imagens/calculadora1.png");
+    background-size: 5vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+}
+
+/* Header */
+.header{
+    background-color: rgb(68, 68, 68);
+    justify-content: space-around;
+    height: 26.3vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fixed-menu {
+    overflow: hidden;
+    position: fixed;
+    z-index: 3; 
+}
+
+#logo1{
+    height: 20vh;
+    width: 10vw;
+    background-image: url("./imagens/logo1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20vh;
+}
+
+#links{
+    display: flex;
+    flex-direction: row;
+}
+
+.navegacao1{
+    margin-right: 20px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.navegacao1 a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* rodape */
+
+.copyright{
+    margin-top: 20px;
+    color: #FFFFFF;
+}
+
+#caixa4 a{
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    margin-right: 30px;
+    font-size: large;
+    text-decoration: none;
+}

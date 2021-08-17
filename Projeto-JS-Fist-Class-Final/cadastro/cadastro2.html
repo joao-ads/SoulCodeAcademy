@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cadastro.css">
+  <script src="cadastro2.js"></script>
+  <title>Cadastro First Class</title>
+</head>
+<div id="fixed-menu"><!--inicio-->
+    <header class="header"> 
+        <div id="logo1"> <a href="../index_inicio.html"></a></div>
+        <div id="links">
+            <div class="navegacao1">
+                <a href="../index_inicio.html">Home</a>
+            </div>
+            <div class="navegacao1">
+                <a href="../calculadora/">Calculadora</a>
+            </div>
+            <div class="navegacao1">
+                <a href="../moeda/grid.html">Conversor de moedas</a>
+            </div>
+            <div class="navegacao1">
+                <a href="cadastro2.html">Cadastro</a>
+            </div>
+        </div>
+    </header> 
+</div><!--Fim-->
+
+<body>
+  <section class="container">
+
+    <div class="item">
+        <div id="retangulomapa">
+          <div id="mapa">
+  
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.302367056457!2d-46.688518685187915!3d-23.59348658466696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5746406ee8f7%3A0x32bbd06ffc892321!2sSoul%20Code%20Academy!5e0!3m2!1spt-BR!2sbr!4v1627664671371!5m2!1spt-BR!2sbr"
+              width=100% height=50% style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+  
+            <ul id="endereco">
+              <li class="infosendereco"><img src="Icons/001-location.png"></a>Rua Helena, 235 - Vila Olímpia - São Paulo/SP</li>
+              <li class="infosendereco"><img src="Icons/004-call.png"></a>+55 (11) 99999-5555</li>
+              <li class="infosendereco"><img src="Icons/002-email.png"></a>contato@firstclass.com.br</li>
+              <li class="infosendereco"><img src="Icons/003-globe.png"></a>www.firstclass.com.br</li>
+            </ul>
+  
+          </div>
+        </div>
+    </div>
+
+    <div class="formulario">
+      <h1 id="font_form">Solicite um orçamento:</h1><br>
+      <form name= "formulario" action="#" method="post" class="formFaleConosco">
+
+        <div>
+          <label for="nome"><b>Nome Completo <span>*</span></b></label>
+          <input type="text" id="nome" onblur="validarNome(this)" onchange="converte(this)" required style="width: 250px;"/>
+        </div>
+
+        <div>
+          <label for="cpf"><b>CPF: <span>*</span></b></label>
+          <input type="tel" id="cpf" placeholder="000000000-00"  onblur="validarCpf(this)"
+            required style="width: 150px;"/>
+        </div>
+
+        <div>
+          <label for="dia"><b>Data de nascimento: <span>*</span></b></label>
+          <input type="number" id="dia" placeholder="XX" onfocus="validarDia(this)" onblur="validarDia(this)"
+            required style="width: 50px;"/>
+
+          <select name="mes" id="mes" placeholder = "Selecione" required>
+            <option value="mes1">Janeiro</option>
+            <option value="mes2">Fevereiro</option>
+            <option value="mes3">Março</option>
+            <option value="mes4">Abril</option>
+            <option value="mes5">Maio</option>
+            <option value="mes6">Junho</option>
+            <option value="mes7">Julho</option>
+            <option value="mes8">Agosto</option>
+            <option value="mes9">Setembro</option>
+            <option value="mes10">Outubro</option>
+            <option value="mes11">Novembro</option>
+            <option value="mes12">Dezembro</option>
+          </select>
+
+          <input type="number" id="anoNasc" placeholder="XXXX" onfocus="validarAno(this)" onblur="validarAno(this)"
+            required style="width: 60px;"/>
+        </div>
+
+        <div>
+          <label for="email"><b>E-mail: <span>*</span></b></label>
+          <br />
+          <input type="email" id="msgemail" placeholder="joao.silva@gmail.com" required style="width: 250px;"/>
+        </div>
+        <div class="opcao">
+          <label for="sexo"><b>Sexo:</b></label>
+          <select name="sexo" id="sexo" required>
+            <option value="feminino">Feminino</option>
+            <option value="masculino">Masculino</option>
+            <option value="não informado">Não informado</option>
+          </select>
+        </div>
+
+        <div class="btn">
+          <button type="button" value= "" onclick="enviar()"><strong>Cadastrar</strong></button>
+        </div>
+        <div id="textofinal"></div>
+      </form>
+      <div id="retdesignfc3"></div>
+    </div>
+
+  </section>
+</body>
+<footer>
+    <section id="caixa4">
+        <div>
+            <a href="https://www.facebook.com/SoulCodeAcademy" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/soulcodeacademy/?hl=pt-br" target="_blank">Instagram</a>
+            <a href="https://twitter.com/soulcodeacademy" target="_blank">Twitter</a>
+        </div>
+        <div class="copyright">&copy; Projeto JavaScript. 2021</div>
+</section>
+</footer>
+
+</html>

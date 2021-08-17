@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grid.css">
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+    <div id="fixed-menu"><!--inicio-->
+        <header class="header"> 
+            <div id="logo1"><a href="../script_inicio.js"></a></div>
+            <div id="links">
+                <div class="navegacao1">
+                    <a href="../index_inicio.html">Home</a>
+                </div>
+                <div class="navegacao1">
+                    <a href="../calculadora/cal_simples.html">Calculadora</a>
+                </div>
+                <div class="navegacao1">
+                    <a href="./grid.html">Conversor de moedas</a>
+                </div>
+                <div class="navegacao1">
+                    <a href="../ cadastro/cadastro2.html">Cadastro</a>
+                </div>
+            </div>
+        </header> 
+    </div><!--Fim-->
+    
+    <section id="caixa1"><!--Caixa 1-->
+        <div id="texto">
+            <h2>Simule sua conversão</h2>
+            <br>
+            <p>
+                Planeje melhor a sua viagem usando o conversor de moedas. Os dados abaixo são meramente informativos, com o câmbio praticado pelo First Class. Preencha os dados solicitados para simular a conversão.
+            </p>
+        </div>
+    </section><!--Caixa 1 FIM-->
+    
+    <section id="caixa2" id="principal"><!--Caixa 2-->
+        <section id="principal"><!--Inicio principal-->
+            <section id="titulo"><h1><div id="imagem"></div>Conversor de moedas</h1></section>
+            <section id="conversor">
+                <form>
+                    <span>Valor:</span>
+                    <input type="text" name="valor" id="valor" onclick="validacao()" placeholder="00.00">
+                    
+                    <span>De:</span>
+                    <select name="moeda1" id="moeda1">
+                        <option value="Dólar Americano">Dólar Americano</option>
+                        <option value="Dólar Canadense">Dólar Canadense</option>
+                        <option value="Euro">Euro</option>
+                        <option value="Libra">Libra</option>
+                        <option value="Peso Argentino">Peso Argentino</option>
+                        <option value="Real">Real</option>
+                    </select>
+                    
+                    <span>Para:</span>
+                    <select name="moeda2" id="moeda2">
+                        <option value="Dólar Americano">Dólar Americano</option>
+                        <option value="Dólar Canadense">Dólar Canadense</option>
+                        <option value="Euro">Euro</option>
+                        <option value="Libra">Libra</option>
+                        <option value="Peso Argentino">Peso Argentino</option>
+                        <option value="Real">Real</option>
+                    </select>
+
+                    <input type="button" value="CONVERTER" onclick="calcular()" id="botao1">
+                    <input type="text" name="resultado" id="resultado" value="00.00">
+                    <input type="reset" id="botao2">
+                </form>
+            </section>
+        </section><!--Fim principal-->
+    </section><!--Caixa 2 FIM-->
+
+    <section id="caixa3"><!--Caixa 3-->
+        <section id="tabela">
+            <section id="taxa">Taxa de câmbio Real Brasileiro</section>
+            <section class="th1 none">Converter de</section>
+            <section class="th">Para</section>
+            <section class="th">Taxa de câmbio</section>
+            <section class="th">Data</section>
+            <section class="th1">BRL</section>
+            <section class="th branco" id="eua">USD</section>
+            <section class="th branco">0,17783</section>
+            <section class="th branco">16/03/2021</section>
+            <section class="th1">BRL</section>
+            <section class="th branco" id="canada">CAD</section>
+            <section class="th branco">0,22130</section>
+            <section class="th branco">16/03/2021</section>
+            <section class="th1">BRL</section>
+            <section class="th branco" id="euro">EUR</section>
+            <section class="th branco">0,15055</section>
+            <section class="th branco">16/03/2021</section>
+            <section class="th1">BRL</section>
+            <section class="th branco" id="argentina">ARS</section>
+            <section class="th branco">16,20815</section>
+            <section class="th branco">16/03/2021</section>
+            <section class="th1">BRL</section>
+            <section class="th branco" id="libra">GBP</section>
+            <section class="th branco">0,55163</section>
+            <section class="th branco">16/03/2021</section>
+        </section>
+
+        <a href="../calculadora/cal_simples.html">
+            <section id="calculadora"></section><!-- LINKAR COM A PÁGINA DO JOÃO!!!!!!!!!!!!!!!!-->
+        </a>
+    </section><!--Caixa 3 FIM-->
+    <section id="caixa4">
+        <div>
+            <a href="https://www.facebook.com/SoulCodeAcademy" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/soulcodeacademy/?hl=pt-br" target="_blank">Instagram</a>
+            <a href="https://twitter.com/soulcodeacademy" target="_blank">Twitter</a>
+        </div>
+        <div class="copyright">&copy; Projeto JavaScript. 2021</div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

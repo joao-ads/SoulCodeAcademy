@@ -1,0 +1,113 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* Header */
+.header{
+    background-color: rgb(68, 68, 68);
+    justify-content: space-around;
+    height: 26.3vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fixed-menu {
+    overflow: hidden;
+    position: fixed;
+    z-index: 3; 
+}
+
+#logo1{
+    height: 20vh;
+    width: 10vw;
+    background-image: url("./img/logo1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20vh;
+}
+
+#links{
+    display: flex;
+    flex-direction: row;
+}
+
+.navegacao1{
+    margin-right: 20px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.navegacao1 a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Calculadora */
+
+.link{
+    text-decoration: none;
+    font-size: large;
+    text-align: center;
+    padding-top: 15px;
+    color: #fff;
+    padding-left: 12px;
+}
+.calculadora{
+    position: absolute;
+    background-color:rgb(21, 33, 61);
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    padding: 15px;
+    
+}
+.calculadoraOpcao{
+    position: absolute;
+    margin-top: 30px;
+    top: 25%;
+    left: 43%;
+    display: flex;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(31, 31, 31);
+    color:white;
+    border-radius: 20px;
+    border: none;
+}
+.calculadora h1{
+    font-size: 15px;
+    text-align: center;
+    color:white;
+    padding-bottom: 5px;
+    font-variant:small-caps;
+}
+.botao{
+    margin: 3px;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgb(31, 31, 31);
+    color: #fff;
+    border: none;
+}
+.botao:hover{
+    background-color: rgb(41, 44, 63);
+}
+
+#resultado{
+    background-color:white;
+    width: 214px;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+}
